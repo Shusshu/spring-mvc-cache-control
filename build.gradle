@@ -75,8 +75,8 @@ project('spring-mvc-cache-control') {
 			maven {
 				url "$artifactRepoBase/${project.version.endsWith('SNAPSHOT') ? 'libs-snapshot-local' : 'libs-release-local' }"
 				credentials {
-						username = project.ext.repoUser
-						password = project.ext.repoPass
+						username = "ignore project.ext.repoUser"
+						password = "ignore project.ext.repoPass"
 				}
 			}
 		}
